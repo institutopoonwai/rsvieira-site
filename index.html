@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reginaldo Santos Vieira Advocacia</title>
+<meta name="description" content="Reginaldo Santos Vieira Advocacia — atuação em São Paulo e Alagoas desde 2015. Direito do Consumidor, Bancário, Civil, Imobiliário, Trabalhista, Previdenciário, Empresarial e Propriedade Intelectual (INPI).">
+<link rel="icon" href="favicon.png">
+<meta property="og:title" content="Reginaldo Santos Vieira Advocacia">
+<meta property="og:description" content="Excelência jurídica, compromisso e tradição. Atendimento em São Paulo e Alagoas.">
+<meta property="og:image" content="https://rsvieira.adv.br/logo.png">
+<meta property="og:url" content="https://rsvieira.adv.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://rsvieira.adv.br/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #13233f;
+    --navy-deep: #0c1830;
+    --gold: #b8913f;
+    --gold-light: #d8b56a;
+    --ivory: #f8f5ef;
+    --paper: #ffffff;
+    --ink: #1c2433;
+    --muted: #5d6677;
+    --line: #e4ddd0;
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: "Montserrat", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  :root { color-scheme: light; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ivory); }
+  body { font-family: var(--sans); color: var(--ink); background: var(--ivory); line-height: 1.7; font-size: 16px; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { width: min(1140px, 100% - 32px); margin-inline: auto; }
+
+  /* Cabeçalho */
+  header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: rgba(248,245,239,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand img { height: 46px; width: auto; }
+  .brand strong { display: block; font-family: var(--serif); font-size: 1.3rem; color: var(--navy); letter-spacing: .02em; line-height: 1.1; }
+  .brand span { font-size: .62rem; letter-spacing: .4em; color: var(--gold); font-weight: 600; }
+  .menu { display: flex; gap: 28px; list-style: none; align-items: center; }
+  .menu a { white-space: nowrap; text-decoration: none; font-size: .82rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); }
+  .menu a:hover { color: var(--gold); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 2px; font-family: var(--sans); font-size: .82rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: .2s; }
+  .btn-gold { background: var(--gold); color: #fff; }
+  .btn-gold:hover { background: var(--navy); }
+  .btn-line { border-color: var(--navy); color: var(--navy); background: transparent; }
+  .btn-line:hover { background: var(--navy); color: #fff; }
+  .menu .btn { padding: 10px 18px; color: #fff; }
+  .menu .btn:hover { color: #fff; }
+  .toggle { display: none; background: none; border: 0; font-size: 1.6rem; color: var(--navy); cursor: pointer; }
+
+  /* Hero */
+  .hero { padding: 72px 0 88px; }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+  .eyebrow { font-size: .74rem; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); font-weight: 600; display: flex; align-items: center; gap: 14px; }
+  .eyebrow::before { content: ""; width: 36px; height: 1px; background: var(--gold); }
+  h1, h2, h3 { font-family: var(--serif); color: var(--navy); font-weight: 600; line-height: 1.12; }
+  h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin: 18px 0 22px; }
+  h1 em { font-style: normal; color: var(--gold); }
+  .lead { font-size: 1.05rem; color: var(--muted); max-width: 34em; }
+  .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+  .hero-photo { position: relative; }
+  .hero-photo::before { content: ""; position: absolute; inset: 22px -22px -22px 22px; border: 1px solid var(--gold); }
+  .hero-photo img { position: relative; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; box-shadow: 0 30px 60px -30px rgba(12,24,48,.5); }
+  .creds { display: flex; gap: 36px; margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+  .creds b { display: block; font-family: var(--serif); font-size: 1.9rem; color: var(--navy); line-height: 1; }
+  .creds small { font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+  /* Seções */
+  section { padding: 96px 0; }
+  .head { max-width: 640px; margin-bottom: 52px; }
+  .head h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); margin-top: 14px; }
+  .head p { color: var(--muted); margin-top: 14px; }
+  .center { text-align: center; margin-inline: auto; }
+  .center .eyebrow { justify-content: center; }
+  .center .eyebrow::after { content: ""; width: 36px; height: 1px; background: var(--gold); }
+
+  /* Áreas */
+  .areas { background: var(--paper); border-block: 1px solid var(--line); }
+  .grid3 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .card { background: var(--paper); padding: 34px 26px; transition: .25s; }
+  .card:hover { background: var(--ivory); }
+  .card svg { width: 38px; height: 38px; stroke: var(--gold); fill: none; stroke-width: 1.4; margin-bottom: 20px; }
+  .card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+  .card p { color: var(--muted); font-size: .94rem; }
+
+  /* Sobre */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .about-grid img { aspect-ratio: 4/3; object-fit: cover; box-shadow: 0 30px 60px -34px rgba(12,24,48,.55); }
+  .about-grid p { color: var(--muted); margin-bottom: 16px; }
+  .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+  .values div { border-left: 2px solid var(--gold); padding-left: 14px; }
+  .values strong { display: block; font-family: var(--serif); font-size: 1.2rem; color: var(--navy); }
+  .values span { font-size: .84rem; color: var(--muted); }
+
+  /* Advogado */
+  .lawyer { background: var(--navy); color: #dfe4ee; }
+  .lawyer h2, .lawyer h3 { color: #fff; }
+  .lawyer .head p { color: #b9c2d3; }
+  .lawyer-grid { display: grid; grid-template-columns: 380px 1fr; gap: 56px; align-items: center; }
+  .lawyer-grid img { aspect-ratio: 1; object-fit: cover; border: 1px solid rgba(216,181,106,.4); }
+  .lawyer h3 { font-size: 2.2rem; }
+  .oab { color: var(--gold-light); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; margin: 8px 0 22px; }
+  .lawyer p { margin-bottom: 14px; color: #c9d0dd; }
+
+  /* Como funciona */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; counter-reset: s; }
+  .step { counter-increment: s; }
+  .step::before { content: "0" counter(s); font-family: var(--serif); font-size: 2.6rem; color: var(--gold); display: block; line-height: 1; margin-bottom: 12px; }
+  .step h3 { font-size: 1.3rem; margin-bottom: 6px; }
+  .step p { color: var(--muted); font-size: .92rem; }
+
+  /* Contato */
+  .contact { background: var(--paper); border-top: 1px solid var(--line); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .office { border: 1px solid var(--line); padding: 26px 28px; margin-bottom: 18px; background: var(--ivory); }
+  .office h3 { font-size: 1.45rem; margin-bottom: 4px; }
+  .office p { color: var(--muted); font-size: .94rem; }
+  .office a { color: var(--navy); font-weight: 600; text-decoration: none; }
+  .office a:hover { color: var(--gold); }
+  form { display: grid; gap: 14px; }
+  label { font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--navy); }
+  input, select, textarea { width: 100%; margin-top: 6px; padding: 13px 14px; border: 1px solid var(--line); background: var(--ivory); font: inherit; font-size: .95rem; color: var(--ink); border-radius: 2px; }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: -1px; }
+  textarea { min-height: 120px; resize: vertical; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .note { font-size: .78rem; color: var(--muted); }
+
+  /* Rodapé */
+  footer { background: var(--navy-deep); color: #9aa5ba; padding: 56px 0 28px; font-size: .88rem; }
+  .foot { display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; align-items: flex-start; }
+  .foot .brand strong { color: #fff; }
+  .foot a { text-decoration: none; }
+  .foot a:hover { color: var(--gold-light); }
+  .legal { border-top: 1px solid rgba(255,255,255,.08); margin-top: 36px; padding-top: 22px; font-size: .76rem; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  /* WhatsApp flutuante */
+  .wa { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 58px; height: 58px; border-radius: 50%; background: #25d366; display: grid; place-items: center; box-shadow: 0 10px 24px -8px rgba(0,0,0,.4); z-index: 60; transition: transform .2s; }
+  .wa:hover { transform: scale(1.07); }
+  .wa svg { width: 30px; height: 30px; fill: #fff; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  @media (max-width: 960px) {
+    .hero-grid, .about-grid, .lawyer-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-photo { max-width: 420px; }
+    .lawyer-grid img { max-width: 340px; }
+    .grid3 { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 1080px) {
+    .toggle { display: block; }
+    .menu { position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--ivory); border-bottom: 1px solid var(--line); display: none; padding: 8px 16px 18px; }
+    .menu.open { display: flex; }
+    .menu li { width: 100%; }
+    .menu a { display: block; padding: 12px 0; }
+    .menu .btn { justify-content: center; margin-top: 8px; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 68px 0; }
+    .hero { padding: 44px 0 64px; }
+    .hero-photo::before { inset: 14px -10px -14px 14px; }
+    .grid3, .steps, .values, .row2 { grid-template-columns: 1fr; }
+    .brand strong { font-size: 1.1rem; }
+    .brand img { height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap nav">
+    <a href="#inicio" class="brand">
+      <img src="brasao.png" alt="Brasão RSV">
+      <div><strong>Reginaldo Santos Vieira</strong><span>ADVOCACIA</span></div>
+    </a>
+    <button class="toggle" aria-label="Abrir menu" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+    <ul class="menu" onclick="if(event.target.tagName==='A')this.classList.remove('open')">
+      <li><a href="#areas">Áreas de atuação</a></li>
+      <li><a href="#sobre">O escritório</a></li>
+      <li><a href="#advogado">Advogado</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#contato" class="btn btn-gold">Agendar consulta</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Advocacia desde 2015</p>
+        <h1>Excelência jurídica, <em>compromisso</em> e tradição.</h1>
+        <p class="lead">Assessoria e atuação judicial com atendimento próximo e personalizado. Escritório com inscrição na OAB de São Paulo e de Alagoas, com atendimento presencial e on-line.</p>
+        <div class="actions">
+          <a href="#contato" class="btn btn-gold">Fale com o escritório</a>
+          <a href="#areas" class="btn btn-line">Áreas de atuação</a>
+        </div>
+        <div class="creds">
+          <div><b>2015</b><small>Ano de fundação</small></div>
+          <div><b>SP · AL</b><small>Inscrições na OAB</small></div>
+          <div><b>On-line</b><small>Atendimento em todo o Brasil</small></div>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <img src="reginaldo.jpg" alt="Dr. Reginaldo Santos Vieira">
+      </div>
+    </div>
+  </section>
+
+  <section class="areas" id="areas">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Áreas de atuação</p>
+        <h2>Atuação jurídica dedicada a cada caso</h2>
+        <p>Atendimento consultivo e contencioso, do primeiro contato até o encerramento do processo.</p>
+      </div>
+      <div class="grid3 reveal">
+        <article class="card">
+          <svg viewBox="0 0 40 40"><path d="M6 14h28l-3 18H9z"/><path d="M14 14V10a6 6 0 0 1 12 0v4"/></svg>
+          <h3>Direito do Consumidor</h3>
+          <p>Cobranças indevidas, vícios de produtos e serviços, negativação indevida, problemas com compra de veículos e indenizações.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><rect x="6" y="10" width="28" height="20" rx="2"/><path d="M6 16h28M11 24h8"/></svg>
+          <h3>Direito Bancário</h3>
+          <p>Revisão de contratos e financiamentos, juros abusivos, busca e apreensão de veículos e negociação de dívidas.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><path d="M20 5v30M8 12h24M8 12l-4 10a5 5 0 0 0 8 0zM32 12l-4 10a5 5 0 0 0 8 0zM13 35h14"/></svg>
+          <h3>Direito Civil</h3>
+          <p>Contratos, responsabilidade civil, cobranças, cumprimento de sentença e execuções.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><path d="M5 19L20 7l15 12"/><path d="M9 16v18h22V16"/><path d="M17 34v-9h6v9"/></svg>
+          <h3>Direito Imobiliário</h3>
+          <p>Compra e venda, contratos de locação, usucapião, regularização de imóveis, despejo e questões de condomínio.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><path d="M10 34V20a10 10 0 0 1 20 0v14"/><path d="M6 34h28M14 20h12M20 10V6"/></svg>
+          <h3>Direito Trabalhista</h3>
+          <p>Verbas rescisórias, horas extras, reconhecimento de vínculo, acidentes de trabalho e assessoria a empregadores.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="13" r="6"/><path d="M8 34c0-7 5-12 12-12s12 5 12 12"/></svg>
+          <h3>Direito Previdenciário</h3>
+          <p>Aposentadorias, auxílios, BPC/LOAS, revisões de benefícios e planejamento previdenciário perante o INSS.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><rect x="5" y="13" width="30" height="20" rx="2"/><path d="M15 13V9h10v4M5 21h30"/></svg>
+          <h3>Direito Empresarial</h3>
+          <p>Constituição e alteração de sociedades, contratos empresariais e assessoria preventiva para empresas.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M17 27V13h5a4 4 0 0 1 0 8h-5"/></svg>
+          <h3>Propriedade Intelectual</h3>
+          <p>Registro e defesa no INPI de marcas, patentes, desenhos industriais, programas de computador e indicações geográficas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <img src="escritorio.jpg" alt="Sala de atendimento do escritório">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">O escritório</p>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem);margin:14px 0 22px">Tradição e cuidado em cada atendimento</h2>
+        <p>Fundado em 2015, o escritório Reginaldo Santos Vieira Advocacia atua com ética, transparência e dedicação, acompanhando pessoalmente cada cliente em todas as etapas do processo.</p>
+        <p>Com inscrição na OAB de São Paulo e de Alagoas, o escritório atende presencialmente nos dois estados e on-line em todo o país, com processos eletrônicos e comunicação ágil.</p>
+        <div class="values">
+          <div><strong>Ética</strong><span>Atuação conforme o Código de Ética da OAB</span></div>
+          <div><strong>Transparência</strong><span>Informação clara sobre cada etapa</span></div>
+          <div><strong>Proximidade</strong><span>Contato direto com o advogado</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lawyer" id="advogado">
+    <div class="wrap lawyer-grid">
+      <img class="reveal" src="reginaldo.jpg" alt="Dr. Reginaldo Santos Vieira">
+      <div class="reveal">
+        <p class="eyebrow">Advogado responsável</p>
+        <h3 style="margin-top:14px">Dr. Reginaldo Santos Vieira</h3>
+        <p class="oab">OAB/SP 368.725 · OAB/AL 17.885-A</p>
+        <p>Advogado com atuação desde 2015 nas áreas cível, consumidor, bancária, imobiliária, trabalhista, previdenciária, empresarial e de propriedade intelectual, em São Paulo e em Alagoas.</p>
+        <p>Atende cada cliente pessoalmente, do primeiro contato até o fim do processo, com linguagem clara e informação sobre cada etapa do caso.</p>
+        <div class="actions"><a href="#contato" class="btn btn-gold">Agendar uma conversa</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="atendimento">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Atendimento simples e direto</h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step"><h3>Primeiro contato</h3><p>Envie uma mensagem pelo WhatsApp ou pelo formulário com um breve relato da situação.</p></div>
+        <div class="step"><h3>Consulta</h3><p>Reunião presencial ou por videochamada para entender o caso e analisar os documentos.</p></div>
+        <div class="step"><h3>Orientação</h3><p>Explicação clara das alternativas jurídicas, dos prazos e dos custos envolvidos.</p></div>
+        <div class="step"><h3>Acompanhamento</h3><p>Atuação no caso com atualizações periódicas sobre cada andamento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Contato</p>
+        <h2>Fale com o escritório</h2>
+        <p>Atendimento presencial em São Paulo e em Alagoas, com hora marcada, e on-line para todo o Brasil.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="office">
+            <h3>São Paulo</h3>
+            <p>WhatsApp: <a href="https://wa.me/5511947634870" target="_blank" rel="noopener">(11) 94763-4870</a></p>
+          </div>
+          <div class="office">
+            <h3>Alagoas</h3>
+            <p>WhatsApp: <a href="https://wa.me/5582991679255" target="_blank" rel="noopener">(82) 99167-9255</a></p>
+          </div>
+          <div class="office">
+            <h3>E-mail</h3>
+            <p><a href="mailto:rsvieira.adv@gmail.com">rsvieira.adv@gmail.com</a></p>
+          </div>
+          <div class="office">
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/reginaldo.advogado/" target="_blank" rel="noopener">@reginaldo.advogado</a></p>
+          </div>
+        </div>
+        <form class="reveal" id="form">
+          <div class="row2">
+            <label>Nome<input name="nome" required autocomplete="name"></label>
+            <label>Telefone<input name="tel" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="row2">
+            <label>Assunto
+              <select name="area">
+                <option>Direito do Consumidor</option>
+                <option>Direito Bancário</option>
+                <option>Direito Civil</option>
+                <option>Direito Imobiliário</option>
+                <option>Direito Trabalhista</option>
+                <option>Direito Previdenciário</option>
+                <option>Direito Empresarial</option>
+                <option>Propriedade Intelectual (INPI)</option>
+                <option>Outro assunto</option>
+              </select>
+            </label>
+            <label>Atendimento em
+              <select name="uf">
+                <option value="5511947634870">São Paulo</option>
+                <option value="5582991679255">Alagoas</option>
+              </select>
+            </label>
+          </div>
+          <label>Mensagem<textarea name="msg" required placeholder="Descreva brevemente sua situação"></textarea></label>
+          <a class="btn btn-gold" id="enviar" href="https://wa.me/5511947634870" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+          <p class="note">A mensagem abre no WhatsApp para você revisar antes de enviar. O envio de mensagem não estabelece relação advogado-cliente.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand">
+        <img src="brasao.png" alt="">
+        <div><strong>Reginaldo Santos Vieira</strong><span>ADVOCACIA</span></div>
+      </div>
+      <div>
+        <p>OAB/SP 368.725 · OAB/AL 17.885-A</p>
+        <p><a href="mailto:rsvieira.adv@gmail.com">rsvieira.adv@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/reginaldo.advogado/" target="_blank" rel="noopener">@reginaldo.advogado</a></p>
+      </div>
+      <div>
+        <p>SP: <a href="https://wa.me/5511947634870">(11) 94763-4870</a></p>
+        <p>AL: <a href="https://wa.me/5582991679255">(82) 99167-9255</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano">2026</span> Reginaldo Santos Vieira Advocacia. Todos os direitos reservados.</span>
+      <span>Conteúdo de caráter informativo, conforme o Provimento nº 205/2021 do CFOAB.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511947634870" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // O botão é um link comum para o WhatsApp; o texto é montado conforme o visitante preenche o formulário.
+  var form = document.getElementById('form');
+  function montarLink() {
+    var f = form;
+    var texto = 'Olá, Dr. Reginaldo.' +
+      (f.nome.value.trim() ? ' Meu nome é ' + f.nome.value.trim() + '.' : '') +
+      (f.tel.value.trim() ? ' Telefone: ' + f.tel.value.trim() + '.' : '') +
+      '\nAssunto: ' + f.area.value +
+      (f.msg.value.trim() ? '\n\n' + f.msg.value.trim() : '');
+    document.getElementById('enviar').href = 'https://wa.me/' + f.uf.value + '?text=' + encodeURIComponent(texto);
+  }
+  form.addEventListener('input', montarLink);
+  form.addEventListener('change', montarLink);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+  montarLink();
+</script>
+</body>
+</html>
