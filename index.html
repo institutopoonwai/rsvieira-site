@@ -144,7 +144,7 @@
   .legal { border-top: 1px solid rgba(255,255,255,.08); margin-top: 36px; padding-top: 22px; font-size: .76rem; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
   /* WhatsApp flutuante */
-  .wa { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 58px; height: 58px; border-radius: 50%; background: #25d366; display: grid; place-items: center; box-shadow: 0 10px 24px -8px rgba(0,0,0,.4); z-index: 60; transition: transform .2s; }
+  .wa { position: fixed; left: calc(20px + env(safe-area-inset-left, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 58px; height: 58px; border-radius: 50%; background: #25d366; display: grid; place-items: center; box-shadow: 0 10px 24px -8px rgba(0,0,0,.4); z-index: 60; transition: transform .2s; }
   .wa:hover { transform: scale(1.07); }
   .wa svg { width: 30px; height: 30px; fill: #fff; }
 
@@ -425,5 +425,6 @@
   form.addEventListener('submit', function (e) { e.preventDefault(); });
   montarLink();
 </script>
+<script type="module">import BubbleChat from 'https://agent-factory-chat.hostgator.io/scripts/start-chat.js'; const bubbleChat = new BubbleChat('4737b296-3318-4eeb-bc99-c50432b32926', 'prod'); bubbleChat.open();</script>
 </body>
 </html>
